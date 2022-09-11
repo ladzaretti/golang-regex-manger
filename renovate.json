@@ -5,5 +5,14 @@
       "matchStrings": ["#\\srenovate:\\sdatasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s(ENV|ARG) .*?_VERSION=(?<currentValue>.*)\\s"],
       "datasourceTemplate": "golang-version"
     }
-  ]
+  ],
+  "packageRules": [
+       {
+      "matchDatasources": [
+        "pypi"
+      ],
+      "registryUrls": [
+        "https://pypi.com/simple"
+      ]
+   ],
 }
